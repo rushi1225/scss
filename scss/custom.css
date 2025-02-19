@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background: blue;
+}
+header h1 {
+  color: white;
+  text-align: center;
+}
+header:hover {
+  background: red;
+}
+
+main {
+  height: 200px;
+  width: 100%;
+  background: rgb(106, 255, 0);
+  padding: 50px;
+}
+main p {
+  margin-top: 10px;
+}
+main:hover {
+  background: gray;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 50px;
+  background: greenyellow;
+  color: brown;
+  font-size: 20px;
+}
+footer:hover {
+  background: springgreen;
+}
+
+section {
+  height: 200px;
+  width: 200px;
+}/*# sourceMappingURL=custom.css.map */

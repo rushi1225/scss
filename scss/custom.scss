@@ -1,0 +1,95 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    background: blue;
+  h1{
+    color: white;
+    text-align: center;
+    } 
+    // & using for this
+    &:hover{
+        background: red;
+    }
+}
+
+
+
+//variables used in main class of html
+$mainBg: rgb(106, 255, 0);
+$mainHover: gray;
+
+
+
+main{
+    height: 200px;
+    width: 100%;
+    background: $mainBg;
+    padding: 50px;
+
+    p{
+        margin-top: 10px;
+    }
+
+    &:hover{
+        background:$mainHover; 
+    }
+}
+
+//end variable
+
+
+
+
+
+
+
+
+
+// mixin & @include
+
+
+@mixin myColor($fontSize){
+    background: greenyellow;
+    color: brown;
+    font-size: $fontSize;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 50px;
+    
+    &:hover{
+        background: springgreen;
+    }
+    
+    @include myColor(20px)    //20px is font size
+}
+
+// end
+
+
+
+
+// creating external variable
+
+
+
+section{
+    height: 200px;
+    width: 200px;
+    background: _myvariable.$primary-color;
+    
+    &:hover{
+        background: violet
+    }
+}
+
+@import "_myvariable.scss";
