@@ -81,15 +81,15 @@ footer{
 // creating external variable
 
 
-
+@import '_myvariable.scss';
 section{
     height: 200px;
     width: 200px;
-    background: _myvariable.$primary-color;
+    background: $primary-color;
     
     &:hover{
         background: violet
     }
 }
 
-@import "_myvariable.scss";
+
